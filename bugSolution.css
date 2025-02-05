@@ -1,0 +1,16 @@
+/* Solution: Adjust the specificity of the selectors to ensure the intended styles are applied correctly. By adding a more specific selector for the inner p element, we override the previous selectors that had higher specificity. */
+.container {
+  background-color: lightblue;
+}
+
+div.container p {
+  color: green;
+}
+
+.container p {
+  font-weight: bold;
+}
+
+.container .inner p {
+  color: red; /* This should override the other styles because of higher specificity */
+} 
